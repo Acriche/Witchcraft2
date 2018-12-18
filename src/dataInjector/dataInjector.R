@@ -6,7 +6,7 @@ dataInjector <- function(prodDb, dataTables, simulationDbName, sleepTime,
   
   #connect to db:
   if (verbose) cat("\nConnecting to db...")
-  con <- dbConnect(MySQL(), host=server, port=3306, user="salespredictsql" ,password="sales4all", dbname=dbName)    
+  con <- dbConnect(MySQL(), host=server, port=3306, user="" ,password="", dbname=dbName)    
   
   #clean simulationDb:
   if (verbose) cat(paste0("\nRecreating db '", simulationDbName, "'."))
